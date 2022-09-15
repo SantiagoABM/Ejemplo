@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Vale hermosa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/28ecf4c282.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <p>Mi niña hermosa, preciosa, mi reina <br> <br> ¿Quieres ser mi amorcito? </p>
+
+        <a href="javascript:abrir()" class="si" style="color: rgb(255, 0, 0); text-decoration: none;">Si</a>
+        <button id="noBtn">No</button>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+    <style>
+        .ventana{
+        
+            background-image: url(https://heraldodemexico.com.mx/u/fotografias/m/2021/7/21/f1280x720-398848_530523_5050.jpg);
+            width: 59%;
+            color: rgba(255,255,255,1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            min-height: 360px;
+            border-radius: 22px;
+            position: absolute;
+            left: 21%;
+            top: 15%;
+            display: none;
+            text-align: center;
+            background-size: cover;
+        }
+        .acepto{
+            text-decoration: none;
+            color:brown;
+            
+            padding: 0.75em;
+            background: rgb(141, 208, 224);
+            
+        }
+        @media (max-width: 768px){
+            .window{
+                width: auto;
+            }
+            .ventana{
+                width: 100%;
+                left: 0%;
+                height: 44.5%;
+                background-size: cover;
+            }
+            .acepto{
+                text-decoration: none;
+                color:brown;
+                border: 1px brown solid;
+                padding: 0.75em;
+                background: yellow
+            }
+        }
+        img{
+            width: 30%;
+        }
+        .ventana h1{
+            font-size: 2rem;
+            text-align: center;
+            color: red;
+        }
+    </style>
+    <div class="window">
+        <div class="container ventana" id="vent">
+            <h1 style="margin-top: 1rem;">Te amo Vale uwu</h1>
+            <div class="contenido" style="color: brown; ">
+                <div style="text-align: center; margin-top: 1rem;">
+                    <h2>Te amo mucho muchote <br>^v^</h2>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <a href="acepto.html" class="acepto">AQUÍ <i class="fa-solid fa-heart"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function abrir(){
+            document.getElementById("vent").style.display="block";
+        }
+    </script>
+</html>
