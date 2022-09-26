@@ -8,7 +8,7 @@
 
     $header = 'Perdón Santiago';
     $mensajeCompleto= $mensaje . "\nAtt: " . $nombre;
-    mail($destinatario, 'ya no quiero nada', $mensajeCompleto, $header);
+    mail($destinatario, $asunto, $mensajeCompleto, $header);
     echo "<script>alert('Está bien Vale ya me quedó claro :c')</script>";
     echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>')";
 
